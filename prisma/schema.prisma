@@ -18,7 +18,7 @@ model User {
   userName      String
   email         String  
   passwordHash  String
-  createdAt     DateTime
+  createdAt     DateTime      @default(now())
 
   notes         Note[]
   notebooks     Notebook[]
